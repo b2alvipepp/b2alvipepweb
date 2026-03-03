@@ -5,140 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ɓ2ÀL VIP - PREMIUM CHEAT STORE</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Matrix Rain Background -->
-    <canvas id="matrixCanvas"></canvas>
+    <!-- Simple Dark Background -->
+    <div class="dark-bg"></div>
 
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <span class="glitch-logo" data-text="Ɓ2ÀL">Ɓ2ÀL</span> <span class="vip-glow">VIP</span>
+                <span class="vip-text">Ɓ2ÀL VIP</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="active">HOME</a></li>
                 <li><a href="#products">PRODUCTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="glitch-main" data-text="Ɓ2ÀL VIP">Ɓ2ÀL VIP</h1>
-            <div class="typing-container">
-                <span class="static-text">🔥</span>
-                <span class="dynamic-text" id="dynamicText"></span>
-                <span class="static-text">🔥</span>
-            </div>
+            <h1 class="main-title">Ɓ2ÀL VIP</h1>
+            
             <div class="badge-container">
-                <span class="badge-glow">WARGANEGARA Ɓ2ÀL</span>
-                <span class="badge-glow">NO LIMITS NO RULES</span>
-                <span class="badge-glow">PREMIUM CHEAT STORE</span>
+                <div class="badge-simple">WARGANEGARA Ɓ2ÀL</div>
+                <div class="badge-simple">NO LIMITS NO RULES</div>
+                <div class="badge-simple">PREMIUM CHEAT STORE</div>
             </div>
+
             <div class="hero-buttons">
-                <a href="https://t.me/b2alvipep" target="_blank" class="btn-telegram">
-                    <i class="fab fa-telegram"></i> CHAT OWNER
+                <a href="https://t.me/b2alvipep" target="_blank" class="btn-simple owner">
+                    👥 CHAT OWNER
                 </a>
-                <a href="https://t.me/b2alvipepp" target="_blank" class="btn-channel">
-                    <i class="fas fa-bell"></i> JOIN CHANNEL
+                <a href="https://t.me/b2alvipepp" target="_blank" class="btn-simple channel">
+                    🔔 JOIN CHANNEL
                 </a>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
-            <span></span>
-            <span></span>
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- Products Section - ONLY FF & OTHER (NO ML) -->
     <section id="products" class="products">
-        <div class="section-header">
-            <h2 class="section-title"><span class="neon-text">PREMIUM</span> COLLECTION</h2>
-            <p class="section-subtitle">🔥 20+ CHEAT PREMIUM READY 🔥</p>
-        </div>
+        <h2 class="section-title">PREMIUM COLLECTION</h2>
+        <p class="section-subtitle">⚡ 20+ CHEAT READY ⚡</p>
 
-        <!-- Filter Buttons -->
-        <div class="filter-container">
-            <button class="filter-btn active" data-filter="all">ALL</button>
-            <button class="filter-btn" data-filter="ff">FREE FIRE</button>
-            <button class="filter-btn" data-filter="ml">MOBILE LEGEND</button>
-            <button class="filter-btn" data-filter="pubg">PUBG</button>
-            <button class="filter-btn" data-filter="other">OTHER</button>
-        </div>
-
-        <!-- Products Grid -->
         <div class="products-grid">
-            <!-- Elevent v3 -->
-            <div class="product-card" data-category="ff ml">
+            <!-- Elevent v3 (FF) -->
+            <div class="product-card">
                 <div class="card-badge hot">HOT</div>
-                <div class="card-image">
-                    <i class="fas fa-bolt"></i>
-                </div>
+                <div class="card-icon">⚡</div>
                 <h3>ELEVENT V3</h3>
-                <p class="card-desc">FF • ML • All Version</p>
+                <p>FREE FIRE • All Version</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Beyound mobile -->
-            <div class="product-card" data-category="ml">
-                <div class="card-badge vip">VIP</div>
-                <div class="card-image">
-                    <i class="fas fa-crown"></i>
-                </div>
-                <h3>BEYOUND MOBILE</h3>
-                <p>ML • Anti Ban • Drone View</p>
-                <div class="card-footer">
-                    <span class="price">PREMIUM</span>
-                    <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
-                </div>
-            </div>
-
-            <!-- Xtffhax -->
-            <div class="product-card" data-category="ff">
-                <div class="card-image">
-                    <i class="fas fa-skull"></i>
-                </div>
+            <!-- Xtffhax (FF) -->
+            <div class="product-card">
+                <div class="card-icon">💀</div>
                 <h3>XTFFHAX</h3>
-                <p>FF • Aimbot • Wallhack</p>
+                <p>FREE FIRE • Aimbot • Wallhack</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Evo cheat -->
-            <div class="product-card" data-category="ff">
+            <!-- Evo cheat (FF) -->
+            <div class="product-card">
                 <div class="card-badge new">NEW</div>
-                <div class="card-image">
-                    <i class="fas fa-dragon"></i>
-                </div>
+                <div class="card-icon">🐉</div>
                 <h3>EVO CHEAT</h3>
-                <p>FF • Headshot • ESP</p>
+                <p>FREE FIRE • Headshot • ESP</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Spotify -->
-            <div class="product-card" data-category="other">
-                <div class="card-image">
-                    <i class="fab fa-spotify"></i>
-                </div>
+            <!-- Spotify (Other) -->
+            <div class="product-card">
+                <div class="card-icon">🎵</div>
                 <h3>SPOTIFY PREMIUM</h3>
                 <p>No Ads • Unlimited Skip</p>
                 <div class="card-footer">
@@ -147,78 +100,55 @@
                 </div>
             </div>
 
-            <!-- Matrik -->
-            <div class="product-card" data-category="ff">
-                <div class="card-image">
-                    <i class="fas fa-mask"></i>
-                </div>
+            <!-- Matrik (FF) -->
+            <div class="product-card">
+                <div class="card-icon">🎭</div>
                 <h3>MATRIK</h3>
-                <p>FF • Anti Ban • Pro Settings</p>
+                <p>FREE FIRE • Anti Ban • Pro Settings</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Strik br v1 -->
-            <div class="product-card" data-category="ff">
-                <div class="card-image">
-                    <i class="fas fa-crosshairs"></i>
-                </div>
+            <!-- Strik br v1 (FF) -->
+            <div class="product-card">
+                <div class="card-icon">🎯</div>
                 <h3>STRIK BR V1</h3>
-                <p>FF • Aimbot • Wallhack</p>
+                <p>FREE FIRE • Aimbot • Wallhack</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Strik br v2 -->
-            <div class="product-card" data-category="ff">
+            <!-- Strik br v2 (FF) -->
+            <div class="product-card">
                 <div class="card-badge popular">POPULAR</div>
-                <div class="card-image">
-                    <i class="fas fa-bullseye"></i>
-                </div>
+                <div class="card-icon">⚡</div>
                 <h3>STRIK BR V2</h3>
-                <p>FF • Updated • ESP</p>
+                <p>FREE FIRE • Updated • ESP</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Sx2 team -->
-            <div class="product-card" data-category="ml">
-                <div class="card-image">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3>SX2 TEAM</h3>
-                <p>ML • Skin • Drone View</p>
-                <div class="card-footer">
-                    <span class="price">PREMIUM</span>
-                    <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
-                </div>
-            </div>
-
-            <!-- Arabemodz -->
-            <div class="product-card" data-category="ff">
-                <div class="card-image">
-                    <i class="fas fa-moon"></i>
-                </div>
+            <!-- Arabemodz (FF) -->
+            <div class="product-card">
+                <div class="card-icon">🌙</div>
                 <h3>ARABEMODZ</h3>
-                <p>FF • Mod Menu • Safe</p>
+                <p>FREE FIRE • Mod Menu • Safe</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Xthh pubg -->
-            <div class="product-card" data-category="pubg">
+            <!-- Xthh pubg (PUBG) -->
+            <div class="product-card">
                 <div class="card-badge pubg">PUBG</div>
-                <div class="card-image">
-                    <i class="fas fa-parachute-box"></i>
-                </div>
+                <div class="card-icon">🎮</div>
                 <h3>XTHH PUBG</h3>
                 <p>PUBG • ESP • Aimbot</p>
                 <div class="card-footer">
@@ -227,119 +157,68 @@
                 </div>
             </div>
 
-            <!-- Imortal panel -->
-            <div class="product-card" data-category="ml ff">
-                <div class="card-image">
-                    <i class="fas fa-infinity"></i>
-                </div>
+            <!-- Imortal panel (FF/PUBG) -->
+            <div class="product-card">
+                <div class="card-icon">∞</div>
                 <h3>IMORTAL PANEL</h3>
-                <p>Multi Game • Premium</p>
+                <p>FF/PUBG • Premium Panel</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Reaper x pro -->
-            <div class="product-card" data-category="ff">
+            <!-- Reaper x pro (FF) -->
+            <div class="product-card">
                 <div class="card-badge limited">LIMITED</div>
-                <div class="card-image">
-                    <i class="fas fa-scythe"></i>
-                </div>
+                <div class="card-icon">⚔️</div>
                 <h3>REAPER X PRO</h3>
-                <p>FF • Pro Features</p>
+                <p>FREE FIRE • Pro Features</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Lk team daemon -->
-            <div class="product-card" data-category="ml">
-                <div class="card-image">
-                    <i class="fas fa-dragon"></i>
-                </div>
-                <h3>LK TEAM DAEMON</h3>
-                <p>ML • God Mode</p>
-                <div class="card-footer">
-                    <span class="price">PREMIUM</span>
-                    <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
-                </div>
-            </div>
-
-            <!-- Eagle -->
-            <div class="product-card" data-category="ff ml">
-                <div class="card-image">
-                    <i class="fas fa-eagle"></i>
-                </div>
-                <h3>EAGLE</h3>
-                <p>Multi Game • Premium</p>
-                <div class="card-footer">
-                    <span class="price">PREMIUM</span>
-                    <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
-                </div>
-            </div>
-
-            <!-- Lk team v10 -->
-            <div class="product-card" data-category="ml">
-                <div class="card-image">
-                    <i class="fas fa-layer-group"></i>
-                </div>
-                <h3>LK TEAM V10</h3>
-                <p>ML • Latest Version</p>
-                <div class="card-footer">
-                    <span class="price">PREMIUM</span>
-                    <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
-                </div>
-            </div>
-
-            <!-- Error painel -->
-            <div class="product-card" data-category="ff">
-                <div class="card-image">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </div>
+            <!-- Error painel (FF) -->
+            <div class="product-card">
+                <div class="card-icon">⚠️</div>
                 <h3>ERROR PAINEL</h3>
-                <p>FF • Panel Hack</p>
+                <p>FREE FIRE • Panel Hack</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Painel 07 -->
-            <div class="product-card" data-category="ff">
-                <div class="card-image">
-                    <i class="fas fa-hashtag"></i>
-                </div>
+            <!-- Painel 07 (FF) -->
+            <div class="product-card">
+                <div class="card-icon">#️⃣</div>
                 <h3>PAINEL 07</h3>
-                <p>FF • Panel 07</p>
+                <p>FREE FIRE • Panel 07</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Drogon -->
-            <div class="product-card" data-category="ff ml">
-                <div class="card-image">
-                    <i class="fas fa-dragon"></i>
-                </div>
+            <!-- Drogon (FF) -->
+            <div class="product-card">
+                <div class="card-icon">🐲</div>
                 <h3>DROGON</h3>
-                <p>Multi Game • Premium</p>
+                <p>FREE FIRE • Premium</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
                 </div>
             </div>
 
-            <!-- Death panel -->
-            <div class="product-card" data-category="ff">
+            <!-- Death panel (FF) -->
+            <div class="product-card">
                 <div class="card-badge death">DEATH</div>
-                <div class="card-image">
-                    <i class="fas fa-skull-crossbones"></i>
-                </div>
+                <div class="card-icon">💀</div>
                 <h3>DEATH PANEL</h3>
-                <p>FF • Extreme Hack</p>
+                <p>FREE FIRE • Extreme Hack</p>
                 <div class="card-footer">
                     <span class="price">PREMIUM</span>
                     <a href="https://t.me/b2alvipep" target="_blank" class="order-btn">ORDER</a>
@@ -350,58 +229,40 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="section-header">
-            <h2 class="section-title"><span class="neon-text">HUBUNGI</span> OWNER</h2>
-        </div>
+        <h2 class="section-title">HUBUNGI OWNER</h2>
 
         <div class="contact-container">
             <!-- Telegram Owner -->
-            <div class="contact-card telegram-owner">
-                <div class="contact-icon">
-                    <i class="fab fa-telegram"></i>
-                </div>
+            <div class="contact-card">
+                <div class="contact-icon">👥</div>
                 <h3>OWNER</h3>
                 <div class="contact-info">
-                    <div class="info-item">
-                        <span>Username:</span>
-                        <strong>@b2alvipep</strong>
-                    </div>
-                    <div class="info-item">
-                        <span>Link:</span>
-                        <a href="https://t.me/b2alvipep" target="_blank">t.me/b2alvipep</a>
-                    </div>
+                    <p><span>Username:</span> <strong>@b2alvipep</strong></p>
+                    <p><span>Link:</span> <a href="https://t.me/b2alvipep" target="_blank">t.me/b2alvipep</a></p>
                 </div>
                 <a href="https://t.me/b2alvipep" target="_blank" class="contact-btn owner-btn">
-                    <i class="fab fa-telegram"></i> CHAT OWNER
+                    👥 CHAT OWNER
                 </a>
             </div>
 
             <!-- Telegram Channel -->
-            <div class="contact-card telegram-channel">
-                <div class="contact-icon">
-                    <i class="fas fa-bell"></i>
-                </div>
+            <div class="contact-card">
+                <div class="contact-icon">🔔</div>
                 <h3>CHANNEL</h3>
                 <div class="contact-info">
-                    <div class="info-item">
-                        <span>Channel:</span>
-                        <strong>@b2alvipepp</strong>
-                    </div>
-                    <div class="info-item">
-                        <span>Link:</span>
-                        <a href="https://t.me/b2alvipepp" target="_blank">t.me/b2alvipepp</a>
-                    </div>
+                    <p><span>Channel:</span> <strong>@b2alvipepp</strong></p>
+                    <p><span>Link:</span> <a href="https://t.me/b2alvipepp" target="_blank">t.me/b2alvipepp</a></p>
                 </div>
                 <a href="https://t.me/b2alvipepp" target="_blank" class="contact-btn channel-btn">
-                    <i class="fas fa-bell"></i> JOIN CHANNEL
+                    🔔 JOIN CHANNEL
                 </a>
             </div>
         </div>
 
-        <!-- Quick Stats -->
+        <!-- Stats -->
         <div class="stats-container">
             <div class="stat-box">
-                <span class="stat-number">20+</span>
+                <span class="stat-number">15+</span>
                 <span class="stat-label">PREMIUM CHEATS</span>
             </div>
             <div class="stat-box">
@@ -418,16 +279,14 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-logo">
-                <span class="glitch-footer">Ɓ2ÀL</span> <span>VIP</span>
-            </div>
+            <div class="footer-logo">Ɓ2ÀL VIP</div>
             <div class="footer-text">
                 <p>WARGANEGARA Ɓ2ÀL • NO LIMITS NO RULES</p>
                 <p class="small">© 2024 Ɓ2ÀL VIP - PREMIUM CHEAT STORE</p>
             </div>
             <div class="footer-links">
-                <a href="https://t.me/b2alvipep" target="_blank"><i class="fab fa-telegram"></i></a>
-                <a href="https://t.me/b2alvipepp" target="_blank"><i class="fas fa-bell"></i></a>
+                <a href="https://t.me/b2alvipep" target="_blank">👥</a>
+                <a href="https://t.me/b2alvipepp" target="_blank">🔔</a>
             </div>
         </div>
     </footer>
