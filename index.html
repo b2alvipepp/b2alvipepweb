@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ɓ2ÀL VIP - PREMIUM CHEAT STORE</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Background Gradient -->
-    <div class="bg-gradient"></div>
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrixCanvas"></canvas>
 
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <div class="logo">Ɓ2ÀL VIP</div>
+                <div class="logo">
+                    <span class="glitch-text" data-text="Ɓ2ÀL">Ɓ2ÀL</span> <span class="vip-glow">VIP</span>
+                </div>
                 <ul class="nav-links">
                     <li><a href="#home" class="active">HOME</a></li>
                     <li><a href="#products">PRODUCTS</a></li>
@@ -30,11 +35,13 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Ɓ2ÀL VIP</h1>
+                <h1 class="hero-title">
+                    <span class="neon">Ɓ2ÀL</span> <span class="neon-pink">VIP</span>
+                </h1>
                 <div class="hero-badges">
-                    <span class="badge">WARGANEGARA Ɓ2ÀL</span>
-                    <span class="badge">NO LIMITS NO RULES</span>
-                    <span class="badge">PREMIUM CHEAT STORE</span>
+                    <span class="badge glitch-badge">WARGANEGARA Ɓ2ÀL</span>
+                    <span class="badge glitch-badge">NO LIMITS NO RULES</span>
+                    <span class="badge glitch-badge">PREMIUM CHEAT STORE</span>
                 </div>
                 <div class="hero-buttons">
                     <a href="https://t.me/b2alvipep" class="btn btn-telegram" target="_blank">
@@ -46,20 +53,28 @@
                 </div>
             </div>
         </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </section>
 
     <!-- Products Section -->
     <section id="products" class="products">
         <div class="container">
-            <h2 class="section-title">PREMIUM COLLECTION</h2>
-            <p class="section-subtitle">🔥 15+ CHEAT READY 🔥</p>
+            <h2 class="section-title">
+                <span class="neon-text">PREMIUM</span> <span class="neon-pink-text">COLLECTION</span>
+            </h2>
+            <p class="section-subtitle">⚡ 13+ CHEAT PREMIUM READY ⚡</p>
 
             <div class="products-grid">
                 <!-- Elevent V3 -->
                 <div class="product-card">
                     <div class="product-badge hot">HOT</div>
                     <div class="product-icon">
-                        <img src="elevent-v3.png" alt="ELEVENT V3" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="elevent-v3.png" alt="ELEVENT V3" onerror="this.style.display='none'; this.parentElement.innerHTML='⚡';">
                     </div>
                     <h3 class="product-name">ELEVENT V3</h3>
                     <p class="product-desc">FREE FIRE • All Version</p>
@@ -73,7 +88,8 @@
                 <div class="product-card">
                     <div class="product-badge new">NEW</div>
                     <div class="product-icon">
-                        <img src="evo-cheat.png" alt="EVO CHEAT" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="evo-cheat.png" alt="EVO CHEAT" onerror="this.style.display='none'; this.parentElement.innerHTML='🐉';">
                     </div>
                     <h3 class="product-name">EVO CHEAT</h3>
                     <p class="product-desc">FREE FIRE • Headshot • ESP</p>
@@ -86,7 +102,8 @@
                 <!-- Spotify Premium -->
                 <div class="product-card">
                     <div class="product-icon">
-                        <img src="spotify.png" alt="SPOTIFY" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="spotify.png" alt="SPOTIFY" onerror="this.style.display='none'; this.parentElement.innerHTML='🎵';">
                     </div>
                     <h3 class="product-name">SPOTIFY PREMIUM</h3>
                     <p class="product-desc">No Ads • Unlimited Skip</p>
@@ -99,7 +116,8 @@
                 <!-- Strik BR V1 -->
                 <div class="product-card">
                     <div class="product-icon">
-                        <img src="strik-br-v1.png" alt="STRIK BR V1" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="strik-br-v1.png" alt="STRIK BR V1" onerror="this.style.display='none'; this.parentElement.innerHTML='🎯';">
                     </div>
                     <h3 class="product-name">STRIK BR V1</h3>
                     <p class="product-desc">FREE FIRE • Aimbot • Wallhack</p>
@@ -112,7 +130,8 @@
                 <!-- Imortal Panel -->
                 <div class="product-card">
                     <div class="product-icon">
-                        <img src="imortal-panel.png" alt="IMORTAL PANEL" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="imortal-panel.png" alt="IMORTAL PANEL" onerror="this.style.display='none'; this.parentElement.innerHTML='∞';">
                     </div>
                     <h3 class="product-name">IMORTAL PANEL</h3>
                     <p class="product-desc">FF/PUBG • Premium Panel</p>
@@ -125,7 +144,8 @@
                 <!-- Arabemodz -->
                 <div class="product-card">
                     <div class="product-icon">
-                        <img src="arabemodz.png" alt="ARABEMODZ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="arabemodz.png" alt="ARABEMODZ" onerror="this.style.display='none'; this.parentElement.innerHTML='🌙';">
                     </div>
                     <h3 class="product-name">ARABEMODZ</h3>
                     <p class="product-desc">FREE FIRE • Pro Features</p>
@@ -139,7 +159,8 @@
                 <div class="product-card">
                     <div class="product-badge death">DEATH</div>
                     <div class="product-icon">
-                        <img src="death-panel.png" alt="DEATH PANEL" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="death-panel.png" alt="DEATH PANEL" onerror="this.style.display='none'; this.parentElement.innerHTML='💀';">
                     </div>
                     <h3 class="product-name">DEATH PANEL</h3>
                     <p class="product-desc">FREE FIRE • Extreme Hack</p>
@@ -152,7 +173,8 @@
                 <!-- Drogon -->
                 <div class="product-card">
                     <div class="product-icon">
-                        <img src="drogon.png" alt="DROGON" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="drogon.png" alt="DROGON" onerror="this.style.display='none'; this.parentElement.innerHTML='🐲';">
                     </div>
                     <h3 class="product-name">DROGON</h3>
                     <p class="product-desc">FREE FIRE • Premium</p>
@@ -165,7 +187,8 @@
                 <!-- Xtffhax -->
                 <div class="product-card">
                     <div class="product-icon">
-                        <img src="xtffhax.png" alt="XTFFHAX" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="xtffhax.png" alt="XTFFHAX" onerror="this.style.display='none'; this.parentElement.innerHTML='💀';">
                     </div>
                     <h3 class="product-name">XTFFHAX</h3>
                     <p class="product-desc">FREE FIRE • Aimbot • Wallhack</p>
@@ -178,24 +201,11 @@
                 <!-- Matrik -->
                 <div class="product-card">
                     <div class="product-icon">
-                        <img src="matrik.png" alt="MATRIK" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="matrik.png" alt="MATRIK" onerror="this.style.display='none'; this.parentElement.innerHTML='🎭';">
                     </div>
                     <h3 class="product-name">MATRIK</h3>
                     <p class="product-desc">FREE FIRE • Anti Ban</p>
-                    <div class="product-footer">
-                        <span class="product-price">PREMIUM</span>
-                        <a href="https://t.me/b2alvipep" class="product-order">ORDER</a>
-                    </div>
-                </div>
-
-                <!-- Strik BR V2 -->
-                <div class="product-card">
-                    <div class="product-badge popular">POPULAR</div>
-                    <div class="product-icon">
-                        <img src="strik-br-v2.png" alt="STRIK BR V2" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
-                    </div>
-                    <h3 class="product-name">STRIK BR V2</h3>
-                    <p class="product-desc">FREE FIRE • Updated • ESP</p>
                     <div class="product-footer">
                         <span class="product-price">PREMIUM</span>
                         <a href="https://t.me/b2alvipep" class="product-order">ORDER</a>
@@ -206,7 +216,8 @@
                 <div class="product-card">
                     <div class="product-badge pubg">PUBG</div>
                     <div class="product-icon">
-                        <img src="xthh.png" alt="XTHH PUBG" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="xthh.png" alt="XTHH PUBG" onerror="this.style.display='none'; this.parentElement.innerHTML='🎮';">
                     </div>
                     <h3 class="product-name">XTHH PUBG</h3>
                     <p class="product-desc">PUBG • ESP • Aimbot</p>
@@ -220,7 +231,8 @@
                 <div class="product-card">
                     <div class="product-badge limited">LIMITED</div>
                     <div class="product-icon">
-                        <img src="reaper-x-pro.png" alt="REAPER X PRO" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="reaper-x-pro.png" alt="REAPER X PRO" onerror="this.style.display='none'; this.parentElement.innerHTML='⚔️';">
                     </div>
                     <h3 class="product-name">REAPER X PRO</h3>
                     <p class="product-desc">FREE FIRE • Pro Features</p>
@@ -230,23 +242,11 @@
                     </div>
                 </div>
 
-                <!-- Error Painel -->
-                <div class="product-card">
-                    <div class="product-icon">
-                        <img src="error-painel.png" alt="ERROR PAINEL" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
-                    </div>
-                    <h3 class="product-name">ERROR PAINEL</h3>
-                    <p class="product-desc">FREE FIRE • Panel Hack</p>
-                    <div class="product-footer">
-                        <span class="product-price">PREMIUM</span>
-                        <a href="https://t.me/b2alvipep" class="product-order">ORDER</a>
-                    </div>
-                </div>
-
                 <!-- Painel 07 -->
                 <div class="product-card">
                     <div class="product-icon">
-                        <img src="painel-07.png" alt="PAINEL 07" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                        <div class="icon-glow"></div>
+                        <img src="painel-07.png" alt="PAINEL 07" onerror="this.style.display='none'; this.parentElement.innerHTML='#️⃣';">
                     </div>
                     <h3 class="product-name">PAINEL 07</h3>
                     <p class="product-desc">FREE FIRE • Panel 07</p>
@@ -262,31 +262,37 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">HUBUNGI OWNER</h2>
+            <h2 class="section-title">
+                <span class="neon-text">HUBUNGI</span> <span class="neon-pink-text">OWNER</span>
+            </h2>
             
             <div class="contact-grid">
                 <!-- Owner Card -->
                 <div class="contact-card">
-                    <div class="contact-icon">👥</div>
+                    <div class="contact-icon pulse">
+                        <i class="fab fa-telegram"></i>
+                    </div>
                     <h3>OWNER</h3>
                     <div class="contact-info">
-                        <p><span>Username:</span> <strong>@b2alvipep</strong></p>
+                        <p><span>Username:</span> <strong class="glitch-username">@b2alvipep</strong></p>
                         <p><span>Link:</span> <a href="https://t.me/b2alvipep" target="_blank">t.me/b2alvipep</a></p>
                     </div>
-                    <a href="https://t.me/b2alvipep" class="contact-btn" target="_blank">
+                    <a href="https://t.me/b2alvipep" class="contact-btn telegram-glow" target="_blank">
                         <i class="fab fa-telegram"></i> CHAT OWNER
                     </a>
                 </div>
 
                 <!-- Channel Card -->
                 <div class="contact-card">
-                    <div class="contact-icon">🔔</div>
+                    <div class="contact-icon pulse">
+                        <i class="fas fa-bell"></i>
+                    </div>
                     <h3>CHANNEL</h3>
                     <div class="contact-info">
-                        <p><span>Channel:</span> <strong>@b2alvipepp</strong></p>
+                        <p><span>Channel:</span> <strong class="glitch-username">@b2alvipepp</strong></p>
                         <p><span>Link:</span> <a href="https://t.me/b2alvipepp" target="_blank">t.me/b2alvipepp</a></p>
                     </div>
-                    <a href="https://t.me/b2alvipepp" class="contact-btn" target="_blank">
+                    <a href="https://t.me/b2alvipepp" class="contact-btn channel-glow" target="_blank">
                         <i class="fas fa-bell"></i> JOIN CHANNEL
                     </a>
                 </div>
@@ -295,15 +301,15 @@
             <!-- Stats -->
             <div class="stats-grid">
                 <div class="stat-item">
-                    <div class="stat-number">15+</div>
+                    <div class="stat-number" data-target="13">0</div>
                     <div class="stat-label">PREMIUM CHEATS</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">24/7</div>
+                    <div class="stat-number" data-target="24">0</div>
                     <div class="stat-label">SUPPORT</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">100%</div>
+                    <div class="stat-number" data-target="100">0</div>
                     <div class="stat-label">ANTI BAN</div>
                 </div>
             </div>
@@ -314,7 +320,9 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">Ɓ2ÀL VIP</div>
+                <div class="footer-logo">
+                    <span class="neon">Ɓ2ÀL</span> <span class="neon-pink">VIP</span>
+                </div>
                 <div class="footer-text">
                     <p>WARGANEGARA Ɓ2ÀL • NO LIMITS NO RULES</p>
                     <p class="copyright">© 2024 Ɓ2ÀL VIP - PREMIUM CHEAT STORE</p>
